@@ -9,7 +9,14 @@
 import UIKit
 
 class DisplayViewController: UIViewController {
-
+    @IBOutlet weak var displayImageView: UIImageView!
+    
+    @IBOutlet weak var disTitleLabel: UILabel!
+    @IBOutlet weak var disAuthorLabel: UILabel!
+    @IBOutlet weak var publishLabel: UILabel!
+    
+    @IBOutlet weak var descTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

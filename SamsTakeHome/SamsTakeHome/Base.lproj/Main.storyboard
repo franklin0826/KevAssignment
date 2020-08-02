@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="151" id="zxb-DI-USV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ArticleCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="151" id="zxb-DI-USV" customClass="ArticleCell" customModule="SamsTakeHome" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zxb-DI-USV" id="RJj-qx-tJG">
@@ -47,6 +47,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="articleImageView" destination="uCX-hD-mzu" id="H36-HA-dRH"/>
+                                            <outlet property="authorLabel" destination="f0T-dR-GLX" id="x92-vD-6Vr"/>
+                                            <outlet property="titleLabel" destination="5J5-8a-65t" id="jCH-KM-XEE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -63,6 +68,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="c5s-QW-uBw" id="fX7-rh-OhM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,6 +122,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fpG-89-Hp1"/>
                     </view>
+                    <connections>
+                        <outlet property="descTextView" destination="LX4-Gn-3cI" id="5HT-e5-dYS"/>
+                        <outlet property="disAuthorLabel" destination="HDC-d5-2Iz" id="tp8-Md-Gtw"/>
+                        <outlet property="disTitleLabel" destination="Px7-kn-530" id="Lla-AU-x8B"/>
+                        <outlet property="displayImageView" destination="Ime-Yt-jcS" id="iXb-ba-z6P"/>
+                        <outlet property="publishLabel" destination="iEE-34-KLZ" id="b7m-UZ-Qzj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vz-e8-JFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
