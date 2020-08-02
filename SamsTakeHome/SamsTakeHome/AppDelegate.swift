@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  KevAssignment
+//  SamsTakeHome
 //
-//  Created by Franklin Mott on 7/29/20.
+//  Created by Franklin Mott on 7/30/20.
 //  Copyright © 2020 Mac. All rights reserved.
 //
 

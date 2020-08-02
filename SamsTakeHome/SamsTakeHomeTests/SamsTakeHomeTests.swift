@@ -1,15 +1,15 @@
 //
-//  KevAssignmentTests.swift
-//  KevAssignmentTests
+//  SamsTakeHomeTests.swift
+//  SamsTakeHomeTests
 //
-//  Created by Franklin Mott on 7/29/20.
+//  Created by Franklin Mott on 7/30/20.
 //  Copyright © 2020 Mac. All rights reserved.
 //
 
 import XCTest
-@testable import KevAssignment
+@testable import SamsTakeHome
 
-class KevAssignmentTests: XCTestCase {
+class SamsTakeHomeTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
