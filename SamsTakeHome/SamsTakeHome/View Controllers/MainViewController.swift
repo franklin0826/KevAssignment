@@ -8,14 +8,17 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-
+        searchBar.delegate = self
+        searchBar.placeholder = "Search Articles"
+        
         // Do any additional setup after loading the view.
     }
     
