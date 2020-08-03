@@ -13,7 +13,7 @@ class ArticleService {
     let url = URL(string: "http://newsapi.org/v2/everything?q=bitcoin&from=2020-07-02&sortBy=publishedAt&apiKey=144ed5cdfe994830897159c56f275d82")
     func getArticles() {
         URLSession.shared.dataTask(with: url!) { (dat, resp, err) in
-            guard let error = err else {
+            guard err != nil else {
                 print("no error retrieved")
                 return
             }
@@ -25,7 +25,6 @@ class ArticleService {
                 return
             }
             print(articles)
-            
             guard let response = resp else {
                 print("response not found")
                 return
