@@ -9,7 +9,7 @@
 import Foundation
 
 class ArticleService {
-    
+    //TODO: pass search text from searchbar to url
     let url = URL(string: "http://newsapi.org/v2/everything?q=bitcoin&from=2020-07-02&sortBy=publishedAt&apiKey=144ed5cdfe994830897159c56f275d82")
     func getArticles() {
         URLSession.shared.dataTask(with: url!) { (dat, resp, err) in
@@ -29,6 +29,7 @@ class ArticleService {
                 print("response not found")
                 return
             }
+            //TODO: add response to table articles array
             print(response)
         }.resume()
     }

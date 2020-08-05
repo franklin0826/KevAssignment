@@ -19,6 +19,7 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         tableView.delegate = self
         searchBar.delegate = self
         searchBar.placeholder = "Search Articles"
+        
     }
     
 
