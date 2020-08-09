@@ -13,15 +13,28 @@ class MainViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+    let vm = ViewModel()
+    
+    var searchActive : Bool = false
+    var filteredArticles : [Article] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         searchBar.delegate = self
         searchBar.placeholder = "Search Articles"
+        vm.searchText = "Cool Cats"
+        let newArticles = vm.getArticles()
+        
         
     }
+    //retieve entered text from search bar. use text to filter list of articles returned from api. add those filtered items into a new array of filtered items. used array to populate table view
     
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        let text = searchBar.text
+        vm.searchText = text ?? "Cool Cats"
+        vm.getArticles()
+    }
 
     
 

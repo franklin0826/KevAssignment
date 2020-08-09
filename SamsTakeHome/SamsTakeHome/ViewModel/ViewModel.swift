@@ -1,16 +1,26 @@
 //
-//  Service.swift
+//  ViewModel.swift
 //  SamsTakeHome
 //
-//  Created by Franklin Mott on 8/3/20.
+//  Created by Franklin Mott on 8/7/20.
 //  Copyright © 2020 Mac. All rights reserved.
 //
 
 import Foundation
 
-class ArticleService {
+class ViewModel {
+    var searchText: String = ""
+    let articles: [Article] = []
+    
+    let url = URL(string: "http://newsapi.org/v2/everything?q=(SearchText)&from=2020-07-02&sortBy=publishedAt&apiKey=144ed5cdfe994830897159c56f275d82")
+    func articlesRetrieved(articles: ArticleResponse) {
+        // return articles to empty array in main view controller here
+        
+    }
+    
     //TODO: pass search text from searchbar to url
-    let url = URL(string: "http://newsapi.org/v2/everything?q=bitcoin&from=2020-07-02&sortBy=publishedAt&apiKey=144ed5cdfe994830897159c56f275d82")
+    
+
     func getArticles() {
         URLSession.shared.dataTask(with: url!) { (dat, resp, err) in
             guard err != nil else {
@@ -34,3 +44,4 @@ class ArticleService {
         }.resume()
     }
 }
+/* */
