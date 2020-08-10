@@ -18,6 +18,7 @@
 		752B733024D8C8F2007352F6 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B732F24D8C8F2007352F6 /* ArticleModel.swift */; };
 		7570CC5B24D74F0100964292 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570CC5A24D74F0100964292 /* ArticleCell.swift */; };
 		75786D9F24DD99E200973A4B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75786D9E24DD99E200973A4B /* ViewModel.swift */; };
+		75CB499B24E15C0C00D032BE /* ArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB499A24E15C0C00D032BE /* ArticleRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		752B732F24D8C8F2007352F6 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		7570CC5A24D74F0100964292 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		75786D9E24DD99E200973A4B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		75CB499A24E15C0C00D032BE /* ArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		752B733124D8D024007352F6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				75CB499A24E15C0C00D032BE /* ArticleRequest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				7570CC5B24D74F0100964292 /* ArticleCell.swift in Sources */,
 				7510CC4E24D2F06F000FAC69 /* AppDelegate.swift in Sources */,
 				7510CC5024D2F06F000FAC69 /* SceneDelegate.swift in Sources */,
+				75CB499B24E15C0C00D032BE /* ArticleRequest.swift in Sources */,
 				7510CC7124D2F450000FAC69 /* MainViewController.swift in Sources */,
 				752B733024D8C8F2007352F6 /* ArticleModel.swift in Sources */,
 				75786D9F24DD99E200973A4B /* ViewModel.swift in Sources */,

@@ -8,10 +8,13 @@
 
 import Foundation
 
-struct ArticleResponse: Codable {
-    let articles: [Article]
+
+
+struct ArticleResponse: Decodable {
+    let articles: [ArticleInfo]
 }
-class Article: Codable {
+
+struct ArticleInfo: Decodable {
     let author: String
     let title: String
     let description: String
