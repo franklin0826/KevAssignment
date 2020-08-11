@@ -20,61 +20,48 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ArticleCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="120" id="zxb-DI-USV" customClass="ArticleCell" customModule="SamsTakeHome" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ArticleCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="119" id="zxb-DI-USV" customClass="ArticleCell" customModule="SamsTakeHome" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zxb-DI-USV" id="RJj-qx-tJG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ant.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uCX-hD-mzu">
-                                                    <rect key="frame" x="16" y="11.5" width="66" height="97"/>
+                                                    <rect key="frame" x="16" y="11.5" width="65.5" height="96"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="66" id="Hgo-Ee-hfU"/>
                                                         <constraint firstAttribute="height" constant="95" id="IXV-xy-BmE"/>
                                                         <constraint firstAttribute="width" secondItem="uCX-hD-mzu" secondAttribute="height" multiplier="66:95" id="M09-Zj-kmR"/>
                                                     </constraints>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7d-wn-86g">
-                                                    <rect key="frame" x="141" y="5" width="217" height="110"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5J5-8a-65t">
-                                                            <rect key="frame" x="20" y="20" width="197" height="40"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0T-dR-GLX">
-                                                            <rect key="frame" x="20" y="68" width="197" height="42"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="110" id="Pxj-Pn-npN"/>
-                                                    </constraints>
-                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5J5-8a-65t">
+                                                    <rect key="frame" x="109" y="12" width="197" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0T-dR-GLX">
+                                                    <rect key="frame" x="109" y="60" width="197" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="uCX-hD-mzu" firstAttribute="leading" secondItem="RJj-qx-tJG" secondAttribute="leading" constant="16" id="0Iq-Cu-ZOD"/>
-                                                <constraint firstAttribute="trailing" secondItem="e7d-wn-86g" secondAttribute="trailing" constant="25" id="88h-dd-JEb"/>
                                                 <constraint firstItem="uCX-hD-mzu" firstAttribute="centerY" secondItem="RJj-qx-tJG" secondAttribute="centerY" id="9OX-Rd-v04"/>
-                                                <constraint firstItem="e7d-wn-86g" firstAttribute="top" secondItem="RJj-qx-tJG" secondAttribute="top" constant="5" id="C1N-OA-fyd"/>
                                                 <constraint firstAttribute="bottom" secondItem="uCX-hD-mzu" secondAttribute="bottom" constant="12.5" id="F1a-6C-RQT"/>
                                                 <constraint firstItem="uCX-hD-mzu" firstAttribute="top" secondItem="RJj-qx-tJG" secondAttribute="top" constant="12.5" id="JRF-Mn-cQm"/>
-                                                <constraint firstAttribute="bottom" secondItem="e7d-wn-86g" secondAttribute="bottom" constant="5" id="YDE-KN-4e8"/>
-                                                <constraint firstItem="e7d-wn-86g" firstAttribute="centerY" secondItem="RJj-qx-tJG" secondAttribute="centerY" id="iiI-ls-KwR"/>
-                                                <constraint firstItem="e7d-wn-86g" firstAttribute="leading" secondItem="uCX-hD-mzu" secondAttribute="trailing" constant="25" id="qaZ-Pd-RDq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="articleImageView" destination="uCX-hD-mzu" id="H36-HA-dRH"/>
                                             <outlet property="authorLabel" destination="f0T-dR-GLX" id="x92-vD-6Vr"/>
                                             <outlet property="titleLabel" destination="5J5-8a-65t" id="jCH-KM-XEE"/>
+                                            <segue destination="H6G-0D-AUx" kind="presentation" id="Djo-yu-rpO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -106,7 +93,7 @@
             <objects>
                 <viewController storyboardIdentifier="DisplayViewController" title="DisplayViewController" id="H6G-0D-AUx" customClass="DisplayViewController" customModule="SamsTakeHome" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l5m-r5-gck">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-Yt-jcS">

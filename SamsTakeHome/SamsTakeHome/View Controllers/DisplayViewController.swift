@@ -16,11 +16,9 @@ class DisplayViewController: UIViewController {
     @IBOutlet weak var publishLabel: UILabel!
     
     @IBOutlet weak var descTextView: UITextView!
-    
+    let vm = ViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 

@@ -10,6 +10,10 @@ import Foundation
 
 class ViewModel {
     var searchText: String = ""
-    let articles: [ArticleInfo] = []
+    var articles: [ArticleInfo] = []
+    var displayTitleText: String = ""
+    var displayAuthorText: String = ""
+    var displayPublishText: String = ""
+    var displayDescText: String = ""
 
 }
