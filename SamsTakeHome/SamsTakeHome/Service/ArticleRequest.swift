@@ -30,6 +30,7 @@ struct ArticleRequest {
                 let decoder = JSONDecoder()
                 let articleResponse = try decoder.decode(ArticleResponse.self , from: data)
                 let articleDetails = articleResponse.articles
+                print(articleDetails.count)
             } catch {
                 print("Error decoding data")
             }
@@ -37,8 +38,6 @@ struct ArticleRequest {
                 print("response not found")
                 return
             }
-        //TODO: add response to table articles array
-        print(response)
         }.resume()
     }
 }

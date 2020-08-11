@@ -14,6 +14,7 @@ class MainViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
     
     let vm = ViewModel()
+   
     
     var listOfArticles = [ArticleInfo]() {
         didSet {
@@ -47,6 +48,7 @@ class MainViewController: UIViewController, UISearchBarDelegate {
                 print(error)
             case .success(let articles):
                 self?.listOfArticles = articles
+                self!.tableView.reloadData()
             }
         }
     }
@@ -62,7 +64,7 @@ extension MainViewController: UITableViewDataSource {
         return listOfArticles.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 119
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -70,10 +72,13 @@ extension MainViewController: UITableViewDataSource {
         let article = listOfArticles[indexPath.row]
         cell.authorLabel.text = article.author
         cell.titleLabel.text = article.title
-        tableView.reloadData()
+        vm.displayAuthorText = article.author
+        vm.displayTitleText = article.title
+        vm.displayDescText = article.description
+        vm.displayPublishText = article.content
         return cell
     }
-
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
