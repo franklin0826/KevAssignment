@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75ADB97324EDE20F000552EE /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADB97224EDE20F000552EE /* DisplayViewController.swift */; };
+		75CB49A924E3558B00D032BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB49A824E3558B00D032BE /* AppDelegate.swift */; };
+		75CB49AB24E3558B00D032BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB49AA24E3558B00D032BE /* SceneDelegate.swift */; };
+		75CB49AD24E3558B00D032BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB49AC24E3558B00D032BE /* ViewController.swift */; };
+		75CB49B224E3558E00D032BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CB49B124E3558E00D032BE /* Assets.xcassets */; };
+		75CB49B524E3558E00D032BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CB49B324E3558E00D032BE /* LaunchScreen.storyboard */; };
+		75CB49C024E3558E00D032BE /* SamsNewTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB49BF24E3558E00D032BE /* SamsNewTakeHomeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75CB49BC24E3558E00D032BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CB499D24E3558B00D032BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CB49A424E3558B00D032BE;
+			remoteInfo = SamsNewTakeHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75ADB97224EDE20F000552EE /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		75CB49A524E3558B00D032BE /* SamsNewTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamsNewTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CB49A824E3558B00D032BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75CB49AA24E3558B00D032BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		75CB49AC24E3558B00D032BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75CB49B124E3558E00D032BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75CB49B424E3558E00D032BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75CB49B624E3558E00D032BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CB49BB24E3558E00D032BE /* SamsNewTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamsNewTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CB49BF24E3558E00D032BE /* SamsNewTakeHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamsNewTakeHomeTests.swift; sourceTree = "<group>"; };
+		75CB49C124E3558E00D032BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75CB49A224E3558B00D032BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CB49B824E3558E00D032BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75CB499C24E3558B00D032BE = {
+			isa = PBXGroup;
+			children = (
+				75CB49A724E3558B00D032BE /* SamsNewTakeHome */,
+				75CB49BE24E3558E00D032BE /* SamsNewTakeHomeTests */,
+				75CB49A624E3558B00D032BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75CB49A624E3558B00D032BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75CB49A524E3558B00D032BE /* SamsNewTakeHome.app */,
+				75CB49BB24E3558E00D032BE /* SamsNewTakeHomeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75CB49A724E3558B00D032BE /* SamsNewTakeHome */ = {
+			isa = PBXGroup;
+			children = (
+				75CB49A824E3558B00D032BE /* AppDelegate.swift */,
+				75CB49AA24E3558B00D032BE /* SceneDelegate.swift */,
+				75CB49AC24E3558B00D032BE /* ViewController.swift */,
+				75ADB97224EDE20F000552EE /* DisplayViewController.swift */,
+				75CB49B124E3558E00D032BE /* Assets.xcassets */,
+				75CB49B324E3558E00D032BE /* LaunchScreen.storyboard */,
+				75CB49B624E3558E00D032BE /* Info.plist */,
+			);
+			path = SamsNewTakeHome;
+			sourceTree = "<group>";
+		};
+		75CB49BE24E3558E00D032BE /* SamsNewTakeHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				75CB49BF24E3558E00D032BE /* SamsNewTakeHomeTests.swift */,
+				75CB49C124E3558E00D032BE /* Info.plist */,
+			);
+			path = SamsNewTakeHomeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75CB49A424E3558B00D032BE /* SamsNewTakeHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CB49C424E3558E00D032BE /* Build configuration list for PBXNativeTarget "SamsNewTakeHome" */;
+			buildPhases = (
+				75CB49A124E3558B00D032BE /* Sources */,
+				75CB49A224E3558B00D032BE /* Frameworks */,
+				75CB49A324E3558B00D032BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SamsNewTakeHome;
+			productName = SamsNewTakeHome;
+			productReference = 75CB49A524E3558B00D032BE /* SamsNewTakeHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75CB49BA24E3558E00D032BE /* SamsNewTakeHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CB49C724E3558E00D032BE /* Build configuration list for PBXNativeTarget "SamsNewTakeHomeTests" */;
+			buildPhases = (
+				75CB49B724E3558E00D032BE /* Sources */,
+				75CB49B824E3558E00D032BE /* Frameworks */,
+				75CB49B924E3558E00D032BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75CB49BD24E3558E00D032BE /* PBXTargetDependency */,
+			);
+			name = SamsNewTakeHomeTests;
+			productName = SamsNewTakeHomeTests;
+			productReference = 75CB49BB24E3558E00D032BE /* SamsNewTakeHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75CB499D24E3558B00D032BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					75CB49A424E3558B00D032BE = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					75CB49BA24E3558E00D032BE = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 75CB49A424E3558B00D032BE;
+					};
+				};
+			};
+			buildConfigurationList = 75CB49A024E3558B00D032BE /* Build configuration list for PBXProject "SamsNewTakeHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75CB499C24E3558B00D032BE;
+			productRefGroup = 75CB49A624E3558B00D032BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75CB49A424E3558B00D032BE /* SamsNewTakeHome */,
+				75CB49BA24E3558E00D032BE /* SamsNewTakeHomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75CB49A324E3558B00D032BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CB49B524E3558E00D032BE /* LaunchScreen.storyboard in Resources */,
+				75CB49B224E3558E00D032BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CB49B924E3558E00D032BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75CB49A124E3558B00D032BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CB49AD24E3558B00D032BE /* ViewController.swift in Sources */,
+				75CB49A924E3558B00D032BE /* AppDelegate.swift in Sources */,
+				75CB49AB24E3558B00D032BE /* SceneDelegate.swift in Sources */,
+				75ADB97324EDE20F000552EE /* DisplayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CB49B724E3558E00D032BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CB49C024E3558E00D032BE /* SamsNewTakeHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75CB49BD24E3558E00D032BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75CB49A424E3558B00D032BE /* SamsNewTakeHome */;
+			targetProxy = 75CB49BC24E3558E00D032BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75CB49B324E3558E00D032BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CB49B424E3558E00D032BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75CB49C224E3558E00D032BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75CB49C324E3558E00D032BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75CB49C524E3558E00D032BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SamsNewTakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mac.SamsNewTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75CB49C624E3558E00D032BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SamsNewTakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mac.SamsNewTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75CB49C824E3558E00D032BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SamsNewTakeHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mac.SamsNewTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SamsNewTakeHome.app/SamsNewTakeHome";
+			};
+			name = Debug;
+		};
+		75CB49C924E3558E00D032BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SamsNewTakeHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mac.SamsNewTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SamsNewTakeHome.app/SamsNewTakeHome";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75CB49A024E3558B00D032BE /* Build configuration list for PBXProject "SamsNewTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CB49C224E3558E00D032BE /* Debug */,
+				75CB49C324E3558E00D032BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75CB49C424E3558E00D032BE /* Build configuration list for PBXNativeTarget "SamsNewTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CB49C524E3558E00D032BE /* Debug */,
+				75CB49C624E3558E00D032BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75CB49C724E3558E00D032BE /* Build configuration list for PBXNativeTarget "SamsNewTakeHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CB49C824E3558E00D032BE /* Debug */,
+				75CB49C924E3558E00D032BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75CB499D24E3558B00D032BE /* Project object */;
+}
