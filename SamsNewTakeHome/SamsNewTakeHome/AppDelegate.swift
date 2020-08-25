@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SamsTakeHome
+//  SamsNewTakeHome
 //
-//  Created by Franklin Mott on 7/30/20.
+//  Created by Franklin Mott on 8/11/20.
 //  Copyright © 2020 Mac. All rights reserved.
 //
 
