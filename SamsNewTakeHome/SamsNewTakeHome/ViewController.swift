@@ -61,10 +61,12 @@ class ViewController: UIViewController, UITableViewDelegate,  UITableViewDataSou
                 print(error)
             case.success(let articles):
                 ViewController.listOfArticles = articles
+                // add urlsession for images
                 DispatchQueue.main.async {
                     self!.articleTableView.reloadData()
                 }
             }
+            
         }
     }
     
@@ -81,6 +83,7 @@ class ViewController: UIViewController, UITableViewDelegate,  UITableViewDataSou
         let article = ViewController.listOfArticles[indexPath.row]
         cell.authorLabel.text = article.author
         cell.titleLabel.text = article.title
+        cell.ArtImageView.image(fromUrl: article.urlToImage ?? "")
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -93,8 +96,25 @@ class ViewController: UIViewController, UITableViewDelegate,  UITableViewDataSou
         dc.displayTitle.text = ViewController.listOfArticles[indexPath.row].title
         dc.displayPublish.text = ViewController.listOfArticles[indexPath.row].content
         //dc.displayImage.image = ViewController.listOfArticles[indexPath.row].urlToImage
+        dc.displayImage.image(fromUrl: ViewController.listOfArticles[indexPath.row].urlToImage ?? "")
         self.navigationController?.pushViewController(dc, animated: true)
-        
+    }
+}
+extension UIImageView {
+    public func image(fromUrl urlString: String) {
+        guard let url = URL(string: urlString) else {
+            print("Couldn't create URL from \(urlString)")
+            return
+        }
+        let theTask = URLSession.shared.dataTask(with: url) {
+            data, response, error in
+            if let response = data {
+                DispatchQueue.main.async {
+                    self.image = UIImage(data: response)
+                }
+            }
+        }
+        theTask.resume()
     }
 }
 
@@ -135,7 +155,7 @@ class ArticleCell: UITableViewCell {
         img.translatesAutoresizingMaskIntoConstraints = false
         return img
     }()
-    func setupView() -> Bool {
+    func setupView() {
         addSubview(cellView)
         cellView.addSubview(authorLabel)
         cellView.addSubview(titleLabel)
@@ -146,8 +166,17 @@ class ArticleCell: UITableViewCell {
             cellView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
             cellView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
-        let finished = true
-        return finished
+        ArtImageView.heightAnchor.constraint(equalToConstant: 75).isActive = true
+        ArtImageView.widthAnchor.constraint(equalToConstant: 75).isActive = true
+        ArtImageView.leadingAnchor.constraint(equalTo: cellView.leadingAnchor , constant: 20).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 25).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: ArtImageView.trailingAnchor, constant: 25).isActive = true
+        titleLabel.numberOfLines = 2
+        titleLabel.lineBreakMode = .byWordWrapping
+        authorLabel.leadingAnchor.constraint(equalTo: ArtImageView.trailingAnchor, constant: 20).isActive = true
+        authorLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
+        authorLabel.numberOfLines = 1
+        
         //: Mark TODO: add constraints for cell here!
     }
 }

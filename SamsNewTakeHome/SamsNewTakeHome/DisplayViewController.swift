@@ -60,7 +60,38 @@ class DisplayViewController: UIViewController {
         displayView.addSubview(displayTitle)
         displayView.addSubview(displayAuthor)
         displayView.addSubview(displayDescription)
-        displayImage.backgroundColor = .red
+        displayView.addSubview(displayPublish)
+        
+        // setup imageview
+        displayImage.backgroundColor = .black
+        displayImage.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        displayImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
+        displayImage.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        displayImage.widthAnchor.constraint(equalToConstant: 125).isActive = true
+        // setup labels
+        displayTitle.topAnchor.constraint(equalTo: displayImage.bottomAnchor, constant: 20).isActive = true
+        displayTitle.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        displayTitle.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50).isActive = true
+        displayTitle.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        displayTitle.numberOfLines = 2
+        
+        displayAuthor.topAnchor.constraint(equalTo: displayTitle.bottomAnchor, constant: 20).isActive = true
+        displayAuthor.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        displayAuthor.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50).isActive = true
+        displayAuthor.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        
+        displayDescription.topAnchor.constraint(equalTo: displayAuthor.bottomAnchor, constant: 20).isActive = true
+        displayDescription.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        displayDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50).isActive = true
+        displayDescription.lineBreakMode = .byWordWrapping
+        displayDescription.numberOfLines = 0
+        
+        
+        displayPublish.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 20).isActive = true
+        displayPublish.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        displayPublish.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50).isActive = true
+
+        
         
 
     }
