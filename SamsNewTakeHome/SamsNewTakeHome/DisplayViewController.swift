@@ -71,25 +71,27 @@ class DisplayViewController: UIViewController {
         // setup labels
         displayTitle.topAnchor.constraint(equalTo: displayImage.bottomAnchor, constant: 20).isActive = true
         displayTitle.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        displayTitle.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50).isActive = true
+        displayTitle.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
         displayTitle.heightAnchor.constraint(equalToConstant: 30).isActive = true
         displayTitle.numberOfLines = 2
         
         displayAuthor.topAnchor.constraint(equalTo: displayTitle.bottomAnchor, constant: 20).isActive = true
         displayAuthor.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        displayAuthor.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50).isActive = true
+        displayAuthor.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
         displayAuthor.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
         displayDescription.topAnchor.constraint(equalTo: displayAuthor.bottomAnchor, constant: 20).isActive = true
         displayDescription.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        displayDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50).isActive = true
+        displayDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
         displayDescription.lineBreakMode = .byWordWrapping
         displayDescription.numberOfLines = 0
         
         
-        displayPublish.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 20).isActive = true
+        displayPublish.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
         displayPublish.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        displayPublish.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50).isActive = true
+        displayPublish.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        displayPublish.lineBreakMode = .byWordWrapping
+        displayPublish.numberOfLines = 0
 
         
         

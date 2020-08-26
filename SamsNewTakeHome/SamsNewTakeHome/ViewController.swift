@@ -169,12 +169,14 @@ class ArticleCell: UITableViewCell {
         ArtImageView.heightAnchor.constraint(equalToConstant: 75).isActive = true
         ArtImageView.widthAnchor.constraint(equalToConstant: 75).isActive = true
         ArtImageView.leadingAnchor.constraint(equalTo: cellView.leadingAnchor , constant: 20).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 25).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 5).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: ArtImageView.trailingAnchor, constant: 25).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: cellView.trailingAnchor, constant: -25).isActive = true
         titleLabel.numberOfLines = 2
         titleLabel.lineBreakMode = .byWordWrapping
         authorLabel.leadingAnchor.constraint(equalTo: ArtImageView.trailingAnchor, constant: 20).isActive = true
-        authorLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
+        authorLabel.trailingAnchor.constraint(equalTo: cellView.trailingAnchor, constant: -25).isActive = true
+        authorLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10).isActive = true
         authorLabel.numberOfLines = 1
         
         //: Mark TODO: add constraints for cell here!
