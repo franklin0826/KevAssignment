@@ -25,7 +25,6 @@ class SamsNewTakeHomeTests: XCTestCase {
     func testSetupView() {
         let ac = ArticleCell()
         let test = ac.setupView()
-        XCTAssertTrue(test)
     }
 
 }
